@@ -1,0 +1,446 @@
+/* Reset default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  line-height: 1.6;
+  background-color: #b0a8d9; /* Background color: Purple */
+  position: relative;
+}
+
+/* Header */
+header {
+  background-color: #f09e34; /* Header background color: Light Blue */
+  font-size: 24px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* Additional Styles for Header and Logo Container */
+header.header-hidden {
+  transform: translateY(-100%);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.logo-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.logo-container h1 {
+  margin: 0;
+  font-size: 48px; /* Updated font size */
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid white; /* Add a border to the heading */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background with some opacity */
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  background-color: darkslategrey; /* Navigation background color: Dark Blue */
+  padding: 10px 0;
+  border-radius: 20px; /* Add border-radius to match the header */
+  border: 2px solid #333; /* Add border to the navigation bar */
+  width: 95%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the navigation bar horizontally */
+  margin-left: 15px; /* Adjust the left margin as needed */
+  display: flex; /* Add this line to use flexbox */
+  justify-content: center; /* Center the navigation items horizontally */
+  flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox to evenly distribute navigation links */
+  justify-content: center; /* Center the navigation links horizontally */
+}
+
+nav li {
+  margin: 0 10px; /* Add equal margin on both sides of the navigation link */
+  position: relative;
+}
+
+nav li:last-child {
+  margin-right: 0; /* Remove margin from the last navigation item */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Add vertical line between navigation items */
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 1px;
+  background-color: #fff;
+}
+
+/* Remove vertical line from the last navigation item */
+nav li:last-child a::before {
+  display: none;
+}
+
+nav a:hover {
+  background-color: #808080; /* Navigation link hover color: Darker Blue */
+}
+
+/* Main Content */
+main {
+  font-size: 24px;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Home Section */
+#home {
+  text-align: center;
+  margin-top: 85px;
+  background-color: #edf2f7; /* Updated background color */
+  padding: 60px 0;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#home h1 {
+  font-size: 48px; /* Updated font size */
+  margin-bottom: 20px;
+  color: #000; /* Heading color: Black */
+}
+
+#home p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #000; /* Text color: Black */
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Our Courses Section */
+#courses {
+  text-align: center;
+  background-color: #edf2f7; /* Updated background color */
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f7fafc; /* Updated background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.course img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.course h2 {
+  font-size: 48px; /* Updated font size */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Upcoming Events and Testimonials Section */
+#events,
+#testimonials {
+  text-align: center;
+  background-color: #edf2f7; /* Updated background color */
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Upcoming Events Section */
+#events {
+  text-align: center;
+  background-color: #edf2f7; /* Updated background color */
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#events h2 {
+  font-size: 48px; /* Updated font size for the section heading */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.event,
+.testimonial {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7fafc; /* Updated background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.event h3,
+.testimonial p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.event p,
+.testimonial p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* About Us Section */
+#about {
+  text-align: center;
+  background-color: #edf2f7; /* Updated background color */
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  font-size: 48px; /* Updated font size */
+  margin-bottom: 10px;
+  color: #000000; /* About section heading color: Dark Blue */
+}
+
+#about p {
+  font-size: 18px;
+  color: #000; /* About section text color: Black */
+}
+
+/* Contact Us Section */
+#contact {
+  text-align: center;
+  background-color: #edf2f7; /* Updated background color */
+  padding: 60px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-heading {
+  font-size: 48px; /* Updated font size */
+  color: #fff;
+}
+
+#contact form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none; /* Remove border */
+  background-color: #f7fafc; /* Text box background color */
+  color: #000; /* Text box text color: Black */
+}
+
+#contact button {
+  display: block;
+  width: 106%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none; /* Remove border */
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #555;
+}
+
+/* Address Section */
+#address {
+  text-align: center;
+  background-color: #edf2f7; /* Updated background color */
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#address h2 {
+  font-size: 48px; /* Updated font size */
+  margin-bottom: 10px;
+  color: #000000; /* Address section heading color: Dark Blue */
+}
+
+#address p {
+  font-size: 18px;
+  color: #000; /* Address section text color: Black */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Back-to-top Button */
+#back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #333;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  display: none;
+}
+
+#back-to-top-btn.show {
+  display: block;
+}
+
+#back-to-top-btn:hover {
+  opacity: 1;
+}
+
+/* Social Media Section */
+#social-media {
+  text-align: center;
+  background-color: #edf2f7; /* Background color */
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Adjust the distance from the previous section */
+}
+
+#social-media .section-heading {
+  font-size: 48px; /* Updated font size */
+  margin-bottom: 20px;
+  color: #000000; /* Heading color */
+}
+
+#social-media .social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#social-media .social-link {
+  text-decoration: none;
+  color: #000000;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#social-media .social-link:hover {
+  color: #808080;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .course,
+  .event,
+  .testimonial {
+    width: 90%;
+  }
+
+  .contact-heading {
+    font-size: 36px;
+  }
+}
