@@ -13,16 +13,16 @@ form {
 
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   color: #333;
   line-height: 1.6;
-  background-color: #b0a8d9; /* Background color: Purple */
+  background-color: #b0a8d9;
   position: relative;
 }
 
 /* Header */
 header {
-  background-color: #f09e34; /* Header background color: Light Blue */
+  background-color: #f09e34;
   font-size: 24px;
   color: #fff;
   padding: 20px;
@@ -59,50 +59,50 @@ header.header-hidden {
 
 .logo-container h1 {
   margin: 0;
-  font-size: 48px; /* Updated font size */
+  font-size: 48px;
   color: #fff;
   padding: 5px 15px;
-  border-radius: 10px; /* Rounded corners */
-  border: 2px solid white; /* Add a border to the heading */
-  background-color: rgba(255, 255, 255, 0.1); /* Transparent background with some opacity */
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Navigation */
 nav {
   text-align: center;
-  background-color: darkslategrey; /* Navigation background color: Dark Blue */
+  background-color: darkslategrey;
   padding: 10px 0;
-  border-radius: 20px; /* Add border-radius to match the header */
-  border: 2px solid #333; /* Add border to the navigation bar */
-  width: 95%; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the navigation bar horizontally */
-  margin-left: 15px; /* Adjust the left margin as needed */
-  display: flex; /* Add this line to use flexbox */
-  justify-content: center; /* Center the navigation items horizontally */
-  flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+  border-radius: 20px;
+  border: 2px solid #333;
+  width: 95%;
+  margin: 0 auto;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Use flexbox to evenly distribute navigation links */
-  justify-content: center; /* Center the navigation links horizontally */
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
-  margin: 0 10px; /* Add equal margin on both sides of the navigation link */
+  margin: 0 10px;
   position: relative;
 }
 
 nav li:last-child {
-  margin-right: 0; /* Remove margin from the last navigation item */
+  margin-right: 0;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 5px;
@@ -127,12 +127,12 @@ nav li:last-child a::before {
 }
 
 nav a:hover {
-  background-color: #808080; /* Navigation link hover color: Darker Blue */
+  background-color: #808080;
 }
 
 /* Main Content */
 main {
-  font-size: 24px;
+  font-size: 18px;
   padding: 20px;
   margin-top: 100px;
 }
@@ -141,7 +141,7 @@ main {
 #home {
   text-align: center;
   margin-top: 85px;
-  background-color: #edf2f7; /* Updated background color */
+  background-color: #edf2f7;
   padding: 60px 0;
   position: relative;
   border-radius: 10px;
@@ -166,15 +166,15 @@ main {
 }
 
 #home h1 {
-  font-size: 48px; /* Updated font size */
+  font-size: 36px;
   margin-bottom: 20px;
-  color: #000; /* Heading color: Black */
+  color: #000;
 }
 
 #home p {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 30px;
-  color: #000; /* Text color: Black */
+  color: #000;
 }
 
 .btn {
@@ -194,7 +194,7 @@ main {
 /* Our Courses Section */
 #courses {
   text-align: center;
-  background-color: #edf2f7; /* Updated background color */
+  background-color: #edf2f7;
   padding: 40px 0;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -205,7 +205,7 @@ main {
   width: 30%;
   padding: 20px;
   margin: 10px;
-  background-color: #f7fafc; /* Updated background color */
+  background-color: #f7fafc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -217,13 +217,13 @@ main {
 }
 
 .course h2 {
-  font-size: 48px; /* Updated font size */
+  font-size: 36px;
   margin-bottom: 10px;
   color: #333;
 }
 
 .course p {
-  font-size: 18px;
+  font-size: 16px;
   color: #555;
 }
 
@@ -231,7 +231,7 @@ main {
 #events,
 #testimonials {
   text-align: center;
-  background-color: #edf2f7; /* Updated background color */
+  background-color: #edf2f7;
   padding: 40px 0;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -240,14 +240,14 @@ main {
 /* Upcoming Events Section */
 #events {
   text-align: center;
-  background-color: #edf2f7; /* Updated background color */
+  background-color: #edf2f7;
   padding: 40px 0;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #events h2 {
-  font-size: 48px; /* Updated font size for the section heading */
+  font-size: 36px;
   margin-bottom: 20px;
   color: #333;
 }
@@ -257,7 +257,7 @@ main {
   width: 60%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f7fafc; /* Updated background color */
+  background-color: #f7fafc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -272,41 +272,43 @@ main {
 
 .event p,
 .testimonial p {
-  font-size: 18px;
+  font-size: 16
+
+px;
   color: #555;
 }
 
 /* About Us Section */
 #about {
   text-align: center;
-  background-color: #edf2f7; /* Updated background color */
+  background-color: #edf2f7;
   padding: 40px 0;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #about h2 {
-  font-size: 48px; /* Updated font size */
+  font-size: 36px;
   margin-bottom: 10px;
-  color: #000000; /* About section heading color: Dark Blue */
+  color: #000000;
 }
 
 #about p {
-  font-size: 18px;
-  color: #000; /* About section text color: Black */
+  font-size: 16px;
+  color: #000;
 }
 
 /* Contact Us Section */
 #contact {
   text-align: center;
-  background-color: #edf2f7; /* Updated background color */
+  background-color: #edf2f7;
   padding: 60px 0;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-heading {
-  font-size: 48px; /* Updated font size */
+  font-size: 36px;
   color: #fff;
 }
 
@@ -321,9 +323,9 @@ main {
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
-  border: none; /* Remove border */
-  background-color: #f7fafc; /* Text box background color */
-  color: #000; /* Text box text color: Black */
+  border: none;
+  background-color: #f7fafc;
+  color: #000;
 }
 
 #contact button {
@@ -331,7 +333,7 @@ main {
   width: 106%;
   margin-bottom: 20px;
   padding: 10px;
-  border: none; /* Remove border */
+  border: none;
   background-color: #333;
   color: #fff;
   font-size: 20px;
@@ -345,21 +347,21 @@ main {
 /* Address Section */
 #address {
   text-align: center;
-  background-color: #edf2f7; /* Updated background color */
+  background-color: #edf2f7;
   padding: 40px 0;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #address h2 {
-  font-size: 48px; /* Updated font size */
+  font-size: 36px;
   margin-bottom: 10px;
-  color: #000000; /* Address section heading color: Dark Blue */
+  color: #000000;
 }
 
 #address p {
-  font-size: 18px;
-  color: #000; /* Address section text color: Black */
+  font-size: 16px;
+  color: #000;
 }
 
 /* Footer */
@@ -398,17 +400,17 @@ footer {
 /* Social Media Section */
 #social-media {
   text-align: center;
-  background-color: #edf2f7; /* Background color */
+  background-color: #edf2f7;
   padding: 40px 0;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* Adjust the distance from the previous section */
+  margin-top: 20px;
 }
 
 #social-media .section-heading {
-  font-size: 48px; /* Updated font size */
+  font-size: 36px;
   margin-bottom: 20px;
-  color: #000000; /* Heading color */
+  color: #000000;
 }
 
 #social-media .social-icons {
@@ -432,15 +434,90 @@ footer {
   color: #808080;
 }
 
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) {
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones) */
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    font-size: 20px;
+  }
+
+  .logo-container h1 {
+    font-size: 32px;
+    padding: 5px 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  main {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
   .course,
   .event,
   .testimonial {
     width: 90%;
   }
 
+  #home h1 {
+    font-size: 32px;
+  }
+
+  #home p {
+    font-size: 14px;
+  }
+
+  #events h2 {
+    font-size: 32px;
+  }
+
   .contact-heading {
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  #about h2 {
+    font-size: 32px;
+  }
+
+  #address h2 {
+    font-size: 32px;
+  }
+
+  #social-media .section-heading {
+    font-size: 32px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .course {
+    width: 60%;
+  }
+
+  .contact-heading,
+  #home h1,
+  #events h2,
+  #about h2,
+  #address h2,
+  #social-media .section-heading {
+    font-size: 40px;
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 769px) and (max-width: 2000px) {
+  .course {
+    width: 30%;
   }
 }
